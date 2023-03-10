@@ -145,7 +145,7 @@ geo_lite_sf_single <- function(address,
                                verbose = FALSE,
                                custom_query = list(),
                                points_only = TRUE) {
-  api <- "https://nominatim.openstreetmap.org/search?q="
+  api <- "http://192.168.100.143:8080/search?q="
 
   # Replace spaces with +
   address2 <- gsub(" ", "+", address)

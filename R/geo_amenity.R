@@ -159,7 +159,7 @@ geo_amenity_single <- function(bbox,
   bbox_txt <- paste0(bbox, collapse = ",")
 
 
-  api <- "https://nominatim.openstreetmap.org/search?"
+  api <- "http://192.168.100.143:8080/search?"
 
   url <- paste0(
     api, "viewbox=",

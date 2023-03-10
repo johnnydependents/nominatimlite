@@ -37,7 +37,7 @@ geo_address_lookup <- function(osm_ids,
                                return_addresses = TRUE,
                                verbose = FALSE,
                                custom_query = list()) {
-  api <- "https://nominatim.openstreetmap.org/lookup?"
+  api <- "http://192.168.100.143:8080/lookup?"
 
   # Prepare nodes
   nodes <- paste0(type, osm_ids, collapse = ",")

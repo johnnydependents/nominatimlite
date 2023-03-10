@@ -126,7 +126,7 @@ reverse_geo_lite_single <- function(lat_cap,
                                     return_coords = TRUE,
                                     verbose = TRUE,
                                     custom_query = list()) {
-  api <- "https://nominatim.openstreetmap.org/reverse?"
+  api <- "http://192.168.100.143:8080/reverse?"
 
   url <- paste0(
     api, "lat=",

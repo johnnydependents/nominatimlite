@@ -18,7 +18,7 @@
 #' @keywords internal
 #' @export
 nominatim_check_access <- function() {
-  url <- "https://nominatim.openstreetmap.org/status.php?format=json"
+  url <- "http://192.168.100.143:8080/status.php?format=json"
   destfile <- tempfile(fileext = ".json")
 
   api_res <- api_call(url, destfile, TRUE)
